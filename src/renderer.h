@@ -3,7 +3,7 @@
 
 #include <ncurses.h>
 
-void initTerminal(int *rowsNumber, int *columnsNumber);
+void init_terminal(int *rowsNumber, int *columnsNumber);
 void render_walls(int rowsNumber, int columnsNumber, char wallSymbol);
 
 #endif

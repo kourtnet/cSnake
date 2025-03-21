@@ -1,6 +1,6 @@
 #include "renderer.h"
 
-void initTerminal(int *rowsNumber, int *columnsNumber){
+void init_terminal(int *rowsNumber, int *columnsNumber){
   initscr();
   getmaxyx(stdscr, *rowsNumber, *columnsNumber);
 }
