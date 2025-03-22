@@ -11,6 +11,8 @@
 
 void init_terminal(int *rowsNumber, int *columnsNumber);
 void render_walls(int rowsNumber, int columnsNumber);
+void render_first_frame(int rowsNumber, int columnsNumber,
+    CoordsPoint appleCoords, CoordsPoint snakeTailCoords);
 void render_apple(CoordsPoint coords);
 void render_start_snake(CoordsPoint coords);
 void render_primitive(CoordsPoint coords, char symbol);

@@ -28,3 +28,10 @@ void render_start_snake(CoordsPoint coords) {
 void render_primitive(CoordsPoint coords, char symbol) {
   mvprintw(coords.y + 1, coords.x + 1, "%c", symbol);
 }
+
+void render_first_frame(int rowsNumber, int columnsNumber,
+    CoordsPoint appleCoords, CoordsPoint snakeTailCoords) {
+  render_walls(rowsNumber, columnsNumber);
+  render_apple(appleCoords);
+  render_start_snake(snakeTailCoords);
+}
