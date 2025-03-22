@@ -6,4 +6,6 @@ struct CoordsPoint {
   int y;
 };
 
+typedef struct CoordsPoint CoordsPoint;
+
 #endif
