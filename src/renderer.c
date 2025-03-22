@@ -18,11 +18,12 @@ void render_walls(int rowsNumber, int columnsNumber) {
 void render_apple(CoordsPoint coords) {
   render_primitive(coords, APPLE_SYMBOL);
 }
+
 void render_start_snake(CoordsPoint coords) {
   int oldX = coords.x;
   while(coords.x < oldX + 3) {
-    ++coords.x;
     render_primitive(coords, SNAKE_SYMBOL);
+    ++coords.x;
   }
 }
 void render_primitive(CoordsPoint coords, char symbol) {
