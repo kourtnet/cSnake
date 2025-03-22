@@ -3,6 +3,9 @@
 
 #include "coordsPoint.h"
 
-_Bool snakeMove(int fieldHeight, int fieldWidth, int **arrayBegin, CoordsPoint snakeHeadCoords,
+_Bool snake_move(int fieldHeight, int fieldWidth, int **arrayBegin, CoordsPoint snakeHeadCoords,
     CoordsPoint snakeTailCoords);
+void set_offsets(int **arrayBegin, CoordsPoint coords, int fieldWidth, int *xOffset, int *yOffset); 
+void move_snake_body_part(int **arrayBegin, CoordsPoint *coords, int fieldWidth, _Bool isTail);
+
 #endif
